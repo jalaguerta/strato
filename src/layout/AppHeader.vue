@@ -1,6 +1,6 @@
 <template>
     <header class="header-global fixed-header">
-      <base-nav class="navbar-main bg-primary" expand>
+      <base-nav class="navbar-main bg-default" expand>
         <!-- Logo -->
         <router-link slot="brand" class="navbar-brand mr-lg-5" to="/">
           <img src="img/brand/white.png" alt="Strato 3D Printing" />
@@ -18,8 +18,13 @@
             <router-link class="nav-link text-white" to="/pricing">Pricing</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link text-white" to="/contact">Contact</router-link>
+            <router-link class="nav-link text-white" to="/landing">Landing</router-link>
           </li>
+          <li class="nav-item">
+          <router-link class="nav-link" to="/login">
+            <base-button type="light" class="btn btn-secondary text-white">Login</base-button>
+          </router-link>
+        </li>
         </ul>
       </base-nav>
     </header>
