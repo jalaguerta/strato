@@ -1,6 +1,7 @@
 import Vue from "vue";
 import Router from "vue-router";
 import AppHeader from "./layout/AppHeader";
+import DashHeader from "./layout/DashHeader.vue";
 import AppFooter from "./layout/AppFooter";
 import Components from "./views/Components.vue";
 import Landing from "./views/Landing.vue";
@@ -9,6 +10,8 @@ import Register from "./views/Register.vue";
 import Profile from "./views/Profile.vue";
 import Homepage from "./views/Homepage.vue";
 import About from "./views/About.vue";
+import Dashboard from "./views/Dashboard.vue";
+import RequestDetails from "./views/RequestDetails.vue";
 
 Vue.use(Router);
 
@@ -78,6 +81,27 @@ export default new Router({
         footer: AppFooter,
       },
     },
+    {
+      path: "/dashboard",
+      name: "PrinterRequests",
+      components: {
+        header: DashHeader,
+        default: Dashboard,
+        footer: AppFooter,
+      },
+    },
+    {
+      path: "/dashboard/requests/:id",
+      name: "RequestDetails",
+      components: {
+        header: DashHeader,
+        default: RequestDetails,
+        footer: AppFooter,
+      },
+      props: true,
+    },
+    
+    
   ],
 
   scrollBehavior: (to) => {

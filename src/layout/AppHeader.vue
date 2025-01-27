@@ -12,11 +12,13 @@
             <router-link class="nav-link text-white" to="/services">How it Works</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link text-white" to="/pricing">Pricing</router-link>
-          </li>
-          <li class="nav-item">
             <router-link class="nav-link text-white" to="/about">About</router-link>
           </li>
+          <li class="nav-item">
+          <router-link class="nav-link" to="/dashboard">
+            <base-button type="default" class="btn btn-secondary text-black">dashboard</base-button>
+          </router-link>
+        </li>
           <li class="nav-item">
           <router-link class="nav-link" to="/login">
             <base-button type="white" class="btn btn-secondary text-black">Login</base-button>
