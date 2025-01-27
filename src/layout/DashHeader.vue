@@ -2,7 +2,7 @@
   <header class="header-global fixed-header">
     <base-nav class="navbar-main bg-dark" expand>
       <!-- Logo -->
-      <router-link slot="brand" class="navbar-brand mr-lg-5" to="/dashboard">
+      <router-link slot="brand" class="navbar-brand mr-lg-5" to="/">
         <img src="img/brand/white.png" alt="Strato 3D Printing" />
       </router-link>
 

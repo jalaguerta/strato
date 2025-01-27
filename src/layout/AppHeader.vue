@@ -9,7 +9,7 @@
         <!-- Navigation Links -->
         <ul class="navbar-nav align-items-lg-center ml-lg-auto">
           <li class="nav-item">
-            <router-link class="nav-link text-white" to="/services">How it Works</router-link>
+            <router-link class="nav-link text-white" to="/">How it Works</router-link>
           </li>
           <li class="nav-item">
             <router-link class="nav-link text-white" to="/about">About</router-link>
