@@ -16,7 +16,7 @@
   
           <!-- Social Media Section -->
           <div class="col-md-6 text-md-right">
-            <h5 class="text-white">Follow Us</h5>
+            <h5 class="text-white">Connect With Us</h5>
             <a
               href="https://facebook.com"
               target="_blank"
@@ -26,12 +26,12 @@
               <i class="fa fa-facebook"></i>
             </a>
             <a
-              href="https://twitter.com"
+              href="https://linkedin.com"
               target="_blank"
               rel="noopener"
-              class="btn btn-neutral btn-icon-only btn-twitter btn-round"
+              class="btn btn-neutral btn-icon-only btn-linkedin btn-round"
             >
-              <i class="fa fa-twitter"></i>
+              <i class="fa fa-linkedin"></i>
             </a>
             <a
               href="https://instagram.com"
