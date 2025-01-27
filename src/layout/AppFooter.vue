@@ -16,7 +16,7 @@
   
           <!-- Social Media Section -->
           <div class="col-md-6 text-md-right">
-            <h5>Follow Us</h5>
+            <h5 class="text-white">Follow Us</h5>
             <a
               href="https://facebook.com"
               target="_blank"

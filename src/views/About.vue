@@ -8,7 +8,7 @@
             <div class="col-lg-8">
               <h2 class="display-3">The Amazing Team</h2>
               <p class="lead text-muted">
-                Meet the brilliant minds who bring ideas to life and make the impossible possible.
+                Meet the team behind StratoLabs!
               </p>
             </div>
           </div>
@@ -62,10 +62,10 @@
             <div class="p-5">
               <div class="row align-items-center">
                 <div class="col-lg-8">
-                  <h3 class="text-white">We make 3D Printing accesible </h3>
+                  <h3 class="text-white">We are looking for talent! </h3>
                   <p class="lead text-white mt-3">
                     We’re on a mission to make 3D printing affordable, easy to use, and within reach for all. 
-                    Whether you’re a creator, hobbyist, or innovator, our platform empowers you to turn ideas into reality.
+                    Join our team if you’re a creator, hobbyist, or innovator, looking to turn ideas into reality.
                   </p>
                 </div>
                 <div class="col-lg-3 ml-lg-auto">
@@ -76,7 +76,7 @@
                     block 
                     size="lg"
                   >
-                    Download Vue
+                    Careers
                   </base-button>
                 </div>
               </div>

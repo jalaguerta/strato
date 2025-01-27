@@ -16,7 +16,7 @@
           </li>
           <li class="nav-item">
           <router-link class="nav-link" to="/dashboard">
-            <base-button type="default" class="btn btn-secondary text-black">dashboard</base-button>
+            <base-button type="green" class="btn btn-success text-black">dashboard</base-button>
           </router-link>
         </li>
           <li class="nav-item">
