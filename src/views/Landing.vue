@@ -19,26 +19,25 @@
                     <div class="col px-0">
                         <div class="row">
                             <div class="col-lg-6">
-                                <h1 class="display-3  text-white">A beautiful Design System
-                                    <span>completed with examples</span>
+                                <h1 class="display-3  text-white">3D Printing
+                                    <span>to your doorstep</span>
                                 </h1>
-                                <p class="lead  text-white">The design system comes with four pre-built pages to help
-                                    you get started faster. You can change the text and images and you're good to
-                                    go.</p>
+                                <p class="lead  text-white">Connect with skilled local makers to bring your designs to life. 
+                                    Get high-quality 3D printing, faster delivery, and support your community..</p>
                                 <div class="btn-wrapper">
                                     <base-button tag="a"
                                                  href="https://demos.creative-tim.com/argon-design-system/docs/components/alerts.html"
                                                  class="mb-3 mb-sm-0"
                                                  type="info"
                                                  icon="fa fa-code">
-                                        Components
+                                        Print now
                                     </base-button>
                                     <base-button tag="a"
                                                  href="https://www.creative-tim.com/product/argon-design-system"
                                                  class="mb-3 mb-sm-0"
                                                  type="white"
                                                  icon="ni ni-cloud-download-95">
-                                        Download HTML
+                                        Maker Signup
                                     </base-button>
                                 </div>
                             </div>
@@ -375,30 +374,28 @@
             <div class="container pt-lg pb-300">
                 <div class="row text-center justify-content-center">
                     <div class="col-lg-10">
-                        <h2 class="display-3 text-white">Build something</h2>
-                        <p class="lead text-white">According to the National Oceanic and Atmospheric Administration,
-                            Ted, Scambos, NSIDClead scentist, puts the potentially record low maximum sea ice extent
-                            tihs year down to low ice.</p>
+                        <h2 class="display-3 text-white">Become a Printing Partner</h2>
+                        <p class="lead text-white">Join our growing network of skilled 3D printing enthusiasts and professionals. 
+                            Earn money while helping to make 3D printing accessible to everyone.</p>
                     </div>
                 </div>
                 <div class="row row-grid mt-5">
                     <div class="col-lg-4">
                         <icon name="ni ni-settings" size="lg" gradient="white" shadow round color="primary"></icon>
-                        <h5 class="text-white mt-3">Building tools</h5>
-                        <p class="text-white mt-3">Some quick example text to build on the card title and make up the
-                            bulk of the card's content.</p>
+                        <h5 class="text-white mt-3">Join a Thriving Community</h5>
+                        <p class="text-white mt-3">Become part of a collaborative network of 3D printing enthusiasts and experts.</p>
                     </div>
                     <div class="col-lg-4">
                         <icon name="ni ni-ruler-pencil" size="lg" gradient="white" shadow round color="primary"></icon>
-                        <h5 class="text-white mt-3">Grow your market</h5>
-                        <p class="text-white mt-3">Some quick example text to build on the card title and make up the
-                            bulk of the card's content.</p>
+                        <h5 class="text-white mt-3">Earn Income</h5>
+                        <p class="text-white mt-3">Get compensated for every order you complete, 
+                            with the majority share of revenue going to you.</p>
                     </div>
                     <div class="col-lg-4">
                         <icon name="ni ni-atom" size="lg" gradient="white" shadow round color="primary"></icon>
-                        <h5 class="text-white mt-3">Launch time</h5>
-                        <p class="text-white mt-3">Some quick example text to build on the card title and make up the
-                            bulk of the card's content.</p>
+                        <h5 class="text-white mt-3">Reduce Idle Time</h5>
+                        <p class="text-white mt-3">Access a consistent flow of print jobs from our growing network of users, 
+                            helping you stay busy and profitable.</p>
                     </div>
                 </div>
             </div>
@@ -409,7 +406,7 @@
                     <div class="col-lg-8">
                         <card gradient="secondary" shadow body-classes="p-lg-5">
                             <h4 class="mb-1">Want to work with us?</h4>
-                            <p class="mt-0">Your project is very important to us.</p>
+                            <p class="mt-0">Your expertise matters</p>
                             <base-input class="mt-5"
                                         alternative
                                         placeholder="Your name"

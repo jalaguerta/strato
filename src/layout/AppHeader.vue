@@ -1,6 +1,6 @@
 <template>
     <header class="header-global fixed-header">
-      <base-nav class="navbar-main bg-default" expand>
+      <base-nav class="navbar-main bg-primary" expand>
         <!-- Logo -->
         <router-link slot="brand" class="navbar-brand mr-lg-5" to="/">
           <img src="img/brand/white.png" alt="Strato 3D Printing" />
@@ -9,20 +9,17 @@
         <!-- Navigation Links -->
         <ul class="navbar-nav align-items-lg-center ml-lg-auto">
           <li class="nav-item">
-            <router-link class="nav-link text-white" to="/">Home</router-link>
-          </li>
-          <li class="nav-item">
-            <router-link class="nav-link text-white" to="/services">Services</router-link>
+            <router-link class="nav-link text-white" to="/services">How it Works</router-link>
           </li>
           <li class="nav-item">
             <router-link class="nav-link text-white" to="/pricing">Pricing</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link text-white" to="/landing">Landing</router-link>
+            <router-link class="nav-link text-white" to="/about">About</router-link>
           </li>
           <li class="nav-item">
           <router-link class="nav-link" to="/login">
-            <base-button type="light" class="btn btn-secondary text-white">Login</base-button>
+            <base-button type="white" class="btn btn-secondary text-black">Login</base-button>
           </router-link>
         </li>
         </ul>

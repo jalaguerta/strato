@@ -1,106 +1,270 @@
 <template>
-    <div class="homepage">
-      <!-- Hero Section -->
-      <header class="position-relative bg-primary py-7 text-center">
-        <h1 class="display-3 text-white font-weight-bold">Welcome to Strato</h1>
-        <p class="lead text-white">A new way of 3D Printing</p>
-  
-        <!-- Image after the heading -->
-        <div class="hero-image-container mt-4">
-          <img src="@/assets/images/hero.jpg" alt="3D Printing Showcase" class="hero-image img-fluid rounded">
-        </div>
-  
-        <button class="btn btn-white btn-lg mt-4" @click="scrollToSection('services')">
-          Explore Our Services
-        </button>
-      </header>
-  
-      <!-- Services Section -->
-      <section id="services" class="py-7">
-        <div class="container">
-          <h2 class="text-center display-4 font-weight-bold mb-5">Our Services</h2>
-          <div class="row">
-            <div
-              class="col-md-4"
-              v-for="service in services"
-              :key="service.id"
-            >
-              <div class="card shadow border-0">
+  <div>
 
-                <div class="card-body">
-                  <h5 class="card-title">{{ service.title }}</h5>
-                  <p class="card-text text-muted">{{ service.description }}</p>
-                </div>
+      <div class="position-relative">
+          <!-- shape Hero -->
+          <section class="section-shaped my-0">
+              <div class="shape shape-style-1 shape-default shape-skew">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
               </div>
-            </div>
+              <div class="container shape-container d-flex">
+                  <div class="col px-0">
+                      <div class="row">
+                          <div class="col-lg-6">
+                              <h1 class="display-3  text-white">3D Printing
+                                  <span>to your doorstep</span>
+                              </h1>
+                              <p class="lead  text-white">Connect with skilled local makers to bring your designs to life. 
+                                  Get high-quality 3D printing, faster delivery, and support your community..</p>
+                              <div class="btn-wrapper">
+                                  <base-button tag="a"
+                                               class="mb-3 mb-sm-0"
+                                               type="info"
+                                               icon="fa fa-code">
+                                      Print now
+                                  </base-button>
+                                  <base-button tag="button"
+                                               class="mb-3 mb-sm-0"
+                                               type="white"
+                                               icon="ni ni-cloud-download-95"
+                                                @click="scrollToSection('work-with-us')"
+                                               >
+                                      Maker Signup
+                                  </base-button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
+          <!-- 1st Hero Variation -->
+      </div>
+      <section class="section section-lg pt-lg-0 mt--200">
+          <div class="container">
+              <div class="row justify-content-center">
+                  <div class="col-lg-12">
+                      <div class="row row-grid">
+                          <div class="col-lg-4">
+                              <card class="border-0" hover shadow body-classes="py-5">
+                                  <icon name="ni ni-check-bold" type="primary" rounded class="mb-4">
+                                  </icon>
+                                  <h6 class="text-primary text-uppercase">Download Argon</h6>
+                                  <p class="description mt-3">Argon is a great free UI package based on Bootstrap 4
+                                      that includes the most important components and features.</p>
+                                  <div>
+                                      <badge type="primary" rounded>design</badge>
+                                      <badge type="primary" rounded>system</badge>
+                                      <badge type="primary" rounded>creative</badge>
+                                  </div>
+                                  <base-button tag="a" href="#" type="primary" class="mt-4">
+                                      Learn more
+                                  </base-button>
+                              </card>
+                          </div>
+                          <div class="col-lg-4">
+                              <card class="border-0" hover shadow body-classes="py-5">
+                                  <icon name="ni ni-istanbul" type="success" rounded class="mb-4">
+                                  </icon>
+                                  <h6 class="text-success text-uppercase">Build Something</h6>
+                                  <p class="description mt-3">Argon is a great free UI package based on Bootstrap
+                                      4 that includes the most important components and features.</p>
+                                  <div>
+                                      <badge type="success" rounded>business</badge>
+                                      <badge type="success" rounded>vision</badge>
+                                      <badge type="success" rounded>success</badge>
+                                  </div>
+                                  <base-button tag="a" href="#" type="success" class="mt-4">
+                                      Learn more
+                                  </base-button>
+                              </card>
+                          </div>
+                          <div class="col-lg-4">
+                              <card class="border-0" hover shadow body-classes="py-5">
+                                  <icon name="ni ni-planet" type="warning" rounded class="mb-4">
+                                  </icon>
+                                  <h6 class="text-warning text-uppercase">Prepare Launch</h6>
+                                  <p class="description mt-3">Argon is a great free UI package based on Bootstrap
+                                      4 that includes the most important components and features.</p>
+                                  <div>
+                                      <badge type="warning" rounded>marketing</badge>
+                                      <badge type="warning" rounded>product</badge>
+                                      <badge type="warning" rounded>launch</badge>
+                                  </div>
+                                  <base-button tag="a" href="#" type="warning" class="mt-4">
+                                      Learn more
+                                  </base-button>
+                              </card>
+                          </div>
+                      </div>
+                  </div>
+              </div>
           </div>
-        </div>
       </section>
-  
-      <!-- Call to Action -->
-      <section class="py-7 bg-secondary text-center text-white">
-        <h2 class="display-4 font-weight-bold">Ready to Bring Your Ideas to Life?</h2>
-        <p class="lead text-dark">Upload your 3D model or get in touch to start printing today!</p>
-        <button class="btn btn-primary btn-lg mt-4" @click="navigateToUpload">
-          Get Started
-        </button>
+      <section class="section section-lg">
+          <div class="container">
+              <div class="row row-grid align-items-center">
+                  <div class="col-md-6 order-md-2">
+                      <img src="img/theme/promo-1.png" class="img-fluid floating">
+                  </div>
+                  <div class="col-md-6 order-md-1">
+                      <div class="pr-md-5">
+                          <icon name="ni ni-settings-gear-65" class="mb-5" size="lg" type="success" shadow
+                                rounded></icon>
+                          <h3>Awesome features</h3>
+                          <p>The kit comes with three pre-built pages to help you get started faster. You can change
+                              the text and images and you're good to go.</p>
+                          <ul class="list-unstyled mt-5">
+                              <li class="py-2">
+                                  <div class="d-flex align-items-center">
+                                      <badge type="success" circle class="mr-3" icon="ni ni-settings-gear-65"></badge>
+                                      <h6 class="mb-0">Carefully crafted components</h6>
+                                  </div>
+                              </li>
+                              <li class="py-2">
+                                  <div class="d-flex align-items-center">
+                                      <badge type="success" circle class="mr-3" icon="ni ni-html5"></badge>
+                                      <h6 class="mb-0">Amazing page examples</h6>
+                                  </div>
+                              </li>
+                              <li class="py-2">
+                                  <div class="d-flex align-items-center">
+                                      <badge type="success" circle class="mr-3" icon="ni ni-satisfied"></badge>
+                                      <h6 class="mb-0">Super friendly support team</h6>
+                                  </div>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
       </section>
-    </div>
-  </template>
-  
-  <script>
-  export default {
-    data() {
-      return {
-        services: [
-          {
-            id: 1,
-            title: "Rapid Prototyping",
-            description: "Fast and precise 3D printing for your prototypes.",
-          },
-          {
-            id: 2,
-            title: "Model Marketplace",
-            description: "Discover models for gifts, decor, and more.",
-          },
-          {
-            id: 3,
-            title: "Peer Printing",
-            description: "Affordable printing through local makers.",
-          },
-        ],
-      };
+      <section class="section bg-secondary">
+          <div class="container">
+              <div class="row row-grid align-items-center">
+                  <div class="col-md-6">
+                      <div class="card bg-default shadow border-0">
+                          <img v-lazy="'img/theme/img-1-1200x1000.jpg'" class="card-img-top">
+                          <blockquote class="card-blockquote">
+                              <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95"
+                                   class="svg-bg">
+                                  <polygon points="0,52 583,95 0,95" class="fill-default"></polygon>
+                                  <polygon points="0,42 583,95 683,0 0,95" opacity=".2" class="fill-default"></polygon>
+                              </svg>
+                              <h4 class="display-3 font-weight-bold text-white">Design System</h4>
+                              <p class="lead text-italic text-white">The Arctic Ocean freezes every winter and much of
+                                  the sea-ice then thaws every summer, and that process will continue whatever
+                                  happens.</p>
+                          </blockquote>
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="pl-md-5">
+                          <icon name="ni ni-settings" class="mb-5" size="lg" type="warning" shadow rounded></icon>
+
+                          <h3>Our customers</h3>
+                          <p class="lead">Don't let your uses guess by attaching tooltips and popoves to any element.
+                              Just make sure you enable them first via JavaScript.</p>
+                          <p>The kit comes with three pre-built pages to help you get started faster. You can change
+                              the text and images and you're good to go.</p>
+                          <p>The kit comes with three pre-built pages to help you get started faster. You can change
+                              the text and images and you're good to go.</p>
+                          <a href="#" class="font-weight-bold text-warning mt-5">A beautiful UI Kit for impactful
+                              websites</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <section id="work-with-us" class="section section-shaped my-0 overflow-hidden">
+          <div class="shape shape-style-3 bg-gradient-default shape-skew">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+          </div>
+          <div class="container pt-lg pb-300">
+              <div class="row text-center justify-content-center">
+                  <div class="col-lg-10">
+                      <h2 class="display-3 text-white">Become a Printing Partner</h2>
+                      <p class="lead text-white">Join our growing network of skilled 3D printing enthusiasts and professionals. 
+                          Earn money while helping to make 3D printing accessible to everyone.</p>
+                  </div>
+              </div>
+              <div class="row row-grid mt-5">
+                  <div class="col-lg-4">
+                      <icon name="ni ni-settings" size="lg" gradient="white" shadow round color="primary"></icon>
+                      <h5 class="text-white mt-3">Join a Thriving Community</h5>
+                      <p class="text-white mt-3">Become part of a collaborative network of 3D printing enthusiasts and experts.</p>
+                  </div>
+                  <div class="col-lg-4">
+                      <icon name="ni ni-ruler-pencil" size="lg" gradient="white" shadow round color="primary"></icon>
+                      <h5 class="text-white mt-3">Earn Income</h5>
+                      <p class="text-white mt-3">Get compensated for every order you complete, 
+                          with the majority share of revenue going to you.</p>
+                  </div>
+                  <div class="col-lg-4">
+                      <icon name="ni ni-atom" size="lg" gradient="white" shadow round color="primary"></icon>
+                      <h5 class="text-white mt-3">Reduce Idle Time</h5>
+                      <p class="text-white mt-3">Access a consistent flow of print jobs from our growing network of users, 
+                          helping you stay busy and profitable.</p>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <section class="section section-lg pt-lg-0 section-contact-us">
+          <div class="container">
+              <div class="row justify-content-center mt--300">
+                  <div class="col-lg-8">
+                      <card gradient="secondary" shadow body-classes="p-lg-5">
+                          <h4 class="mb-1">Want to work with us?</h4>
+                          <p class="mt-0">Your expertise matters</p>
+                          <base-input class="mt-5"
+                                      alternative
+                                      placeholder="Your name"
+                                      addon-left-icon="ni ni-user-run">
+                          </base-input>
+                          <base-input alternative
+                                      placeholder="Email address"
+                                      addon-left-icon="ni ni-email-83">
+                          </base-input>
+                          <base-input class="mb-4">
+                                  <textarea class="form-control form-control-alternative" name="name" rows="4"
+                                            cols="80" placeholder="Type a message..."></textarea>
+                          </base-input>
+                          <base-button type="default" round block size="lg">
+                              Send Message
+                          </base-button>
+                      </card>
+                  </div>
+              </div>
+          </div>
+      </section>
+  </div>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      // Some data here
+    };
+  },
+  methods: {
+    scrollToSection(id) {
+      const section = document.getElementById(id);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
     },
-    methods: {
-      scrollToSection(sectionId) {
-        const section = document.getElementById(sectionId);
-        if (section) {
-          section.scrollIntoView({ behavior: "smooth" });
-        }
-      },
-      navigateToUpload() {
-        this.$router.push("/upload"); // Update to match your upload route <img :src="service.image" :alt="service.title" class="card-img-top" />
-      },
-    },
-  };
-  </script>
-  
-  <style scoped>
-  /* Add a buffer to account for the fixed header */
-  .homepage {
-    padding-top: 80px; /* Match this to the height of your fixed header */ 
-  }
-  
-  .hero-image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .hero-image {
-    max-width: 30%;
-    height: auto;
-    border-radius: 1000px; /* Optional for rounded corners */
-  }
-  </style>
-  
+  },
+};
+
+</script>
